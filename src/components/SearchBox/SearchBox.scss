@@ -1,56 +1,41 @@
 @use "../_colors";
 
-.crossing {
+.cross {
   color: colors.$red-a700;
 }
 
-// .searchSection:focus {
-//   box-shadow: none;
-// }
-
-.searchBoxFrame:focus {
-  box-shadow: none;
+.searchBox:focus {
+  outline: none;
 }
 
-.btn:focus {
-  // outline: none !important;
-
-  box-shadow: none;
-}
-.search_wrapper {
-  height: initial;
+.searchBox {
   border-style: solid;
-  border-color: black;
-  height: 43px;
+  border-width: 2px 2px 2px 2px;
+  border-radius: 10px;
+  border-color: colors.$grey-800;
+  margin: auto;
+  margin-top: 10px;
+  text-indent: 5px;
 }
-.search_wrapper:focus-within {
-  border-style: solid;
-  border-color: colors.$teal-300;
-  // background-color: yellow;
-  // outline: none;
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg)
+    no-repeat 50% 50%;
+  background-size: contain;
+  opacity: 0;
+  pointer-events: none;
+  position: relative;
+  padding-right: 5px;
 }
 
-.searchBoxFrame {
-  width: 90%;
-  border: transparent;
-  // border-style: solid;
-  // border-color: black;
-  // border-width: 2px 0px 2px 2px;
-  // border-top-left-radius: 3px;
-  // border-bottom-left-radius: 3px;
+input[type="search"]:focus::-webkit-search-cancel-button {
+  opacity: 1;
+  pointer-events: all;
 }
-.cross_btn {
-  // border: transparent;
-  // margin-top: 5px;
-}
-// button.btn:focus {
-//   box-shadow: none;
+
+// input[type="search"].dark::-webkit-search-cancel-button {
+//   filter: invert(1);
 // }
-.crossFrame {
-  width: 10%;
-  // border-style: solid;
-  // border-color: black;
-  // border-width: 2px 2px 2px 0px;
-  // border-bottom-right-radius: 3px;
-  // border-top-right-radius: 3px;
-}

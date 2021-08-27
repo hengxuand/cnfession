@@ -1,16 +1,14 @@
 @use "../_colors";
 
 .header {
-  background-color: colors.$grey-800;
-  padding: 50px !important;
-  font-size: 100px;
-  font-weight: lighter;
-  font-family: American Typewriter, serif;
-
-  text-transform: full-width;
-  letter-spacing: 0.2em;
-}
-
-.title {
+  font-size: 10vw;
   color: colors.$teal-300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: colors.$grey-800;
+  font-family: American Typewriter, serif;
 }
