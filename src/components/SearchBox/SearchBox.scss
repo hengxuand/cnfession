@@ -1,0 +1,56 @@
+@use "../_colors";
+
+.crossing {
+  color: colors.$red-a700;
+}
+
+// .searchSection:focus {
+//   box-shadow: none;
+// }
+
+.searchBoxFrame:focus {
+  box-shadow: none;
+}
+
+.btn:focus {
+  // outline: none !important;
+
+  box-shadow: none;
+}
+.search_wrapper {
+  height: initial;
+  border-style: solid;
+  border-color: black;
+  height: 43px;
+}
+.search_wrapper:focus-within {
+  border-style: solid;
+  border-color: colors.$teal-300;
+  // background-color: yellow;
+  // outline: none;
+}
+
+.searchBoxFrame {
+  width: 90%;
+  border: transparent;
+  // border-style: solid;
+  // border-color: black;
+  // border-width: 2px 0px 2px 2px;
+  // border-top-left-radius: 3px;
+  // border-bottom-left-radius: 3px;
+}
+.cross_btn {
+  // border: transparent;
+  // margin-top: 5px;
+}
+// button.btn:focus {
+//   box-shadow: none;
+// }
+.crossFrame {
+  width: 10%;
+  // border-style: solid;
+  // border-color: black;
+  // border-width: 2px 2px 2px 0px;
+  // border-bottom-right-radius: 3px;
+  // border-top-right-radius: 3px;
+}
