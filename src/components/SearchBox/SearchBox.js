@@ -2,11 +2,12 @@ import "./SearchBox.scss";
 import { useState } from "react";
 
 const SearchBox = () => {
+  const [query, setQuery] = useState("");
+
   const handleTyping = (event) => {
     if (event.target.value.length > 3) {
+      setQuery(event.target.value);
     }
-
-    console.log(event.target.value);
   };
 
   return (
