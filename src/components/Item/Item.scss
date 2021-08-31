@@ -1,10 +1,35 @@
 @use "../_colors";
 
 .item {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  border-style: double;
-  border-width: 5px;
-  border-radius: 3px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px grey;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.story_date {
+  font-size: 1vw;
+}
+
+.story_title {
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 3vw;
+  padding: 0px;
+}
+
+.story_content {
+  border-radius: 2px;
+  background-color: colors.$grey-100;
+  font-weight: normal;
+  font-size: 2vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.story_tags {
+  font-size: 1.5vw;
 }
