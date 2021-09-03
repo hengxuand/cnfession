@@ -10,26 +10,30 @@
 }
 
 .story_date {
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 
 .story_title {
   border: none;
   background-color: transparent;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 2vw;
   padding: 0px;
 }
 
 .story_content {
-  border-radius: 2px;
-  background-color: colors.$grey-100;
+  border-radius: 4px;
+  // background-color: colors.$grey-100;
+  // background: transparent;
+  // box-shadow: 0 0 8px colors.$purple-900;
   font-weight: normal;
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
+  margin-right: 1vw;
+  text-align: left;
 }
 
 .story_tags {
-  font-size: 1.5vw;
+  font-size: 1vw;
 }

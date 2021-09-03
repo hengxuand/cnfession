@@ -14,12 +14,12 @@ const Item = (props) => {
 
   return (
     <div className="row col-6 d-flex mx-auto item" role="presentation">
-      <div className="col-1 d-flex">
-        <div className="text-muted">#</div>
-        {props.id}
+      <div className="col-1 d-flex fs-2">
+        <div className="text-muted fs-2">#</div>
+        &nbsp;{props.id}
       </div>
       <div className="col-11 align-items-start d-flex flex-column">
-        <div className="">{props.who}</div>
+        <div className="fs-4">{props.who}</div>
         <div className="story_date text-muted">{props.date}</div>
         <button className="story_title" onClick={handleClick}>
           {props.title}
